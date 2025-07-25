@@ -2,7 +2,7 @@
   "default_paths": {
     "openvino_source_dir": "Prerequisites\\OpenVino",
     "samples_dir": "AIDevKit",
-    "openvino_dest_dir": "C:\\program files (x86)\\intel\\openvino2024",
+    "openvino_dest_dir": "C:\\program files (x86)\\intel\\openvino2025",
     "python_requirements_file": "Prerequisites\\PythonModules\\requirements.txt",
     "local_python_wheel_dir": "Prerequisites\\PythonModules\\modules",
     "local_installers_path": "Prerequisites\\Installers",
@@ -18,31 +18,29 @@
   "archive_installations": [
     {
       "name": "OpenVino",
-      "target_version": "2024.4.1",
+      "target_version": "2025.0.0",
       "installation": {
         "source_path": "OpenVino",
         "source_file": "openvino.zip",
-        "destination_dir": "C:\\program files (x86)\\intel\\openvino2024",
-        "checksum": "8a763fcc2e3cdd916da56326c1e88dc2df0d2269001f0adc88bccc319e97636d",
-        "download_url": "https://github.com/openvinotoolkit/openvino/archive/refs/tags/2024.4.1.zip",
+        "destination_dir": "C:\\program files (x86)\\intel\\openvino2025",
+        "download_url": "https://github.com/openvinotoolkit/openvino/archive/refs/tags/2025.0.0.zip",
         "skip_top_dir": true
       }
     },
     {
       "name": "OpenVino Notebooks",
-      "target_version": "2024.4",
+      "target_version": "2025.0",
       "installation": {
         "source_path": "openvino_notebooks",
         "source_file": "openvino_notebooks.zip",
         "destination_dir": "openvino_notebooks",
-        "download_url": "https://github.com/openvinotoolkit/openvino_notebooks/archive/refs/heads/2024.4.zip",
-        "checksum": "a1d9e562ef12fd20388bdc4f7f6783e4e0ccd48b7fbcc8352953e9d51657fb79",
+        "download_url": "https://github.com/openvinotoolkit/openvino_notebooks/archive/refs/heads/2025.0.zip",
         "skip_top_dir": true
       }
     },
     {
       "name": "OpenVino Demo Notebooks",
-      "target_version": "2024.4",
+      "target_version": "2025.0",
       "installation": {
         "source_path": "openvino_demo",
         "source_file": "openvino_demo.zip",
@@ -51,6 +49,18 @@
         "skip_top_dir": true
       }
     },
+    {
+      "name": "WebNN Workshop",
+      "target_version": "2025.0",
+      "installation": {
+        "source_path": "webnn_workshop",
+        "source_file": "webnn_workshop.zip",
+        "destination_dir": "webnn_workshop",
+        "download_url": "https://github.com/IntelSoftware/webnn_workshop/archive/refs/heads/master.zip",
+        "skip_top_dir": true
+      }
+    },
+
     {
       "name": "Open Model Zoo",
       "target_version": "2024.3.0",
@@ -73,8 +83,7 @@
         "installer_exe": "python-3.10.11-amd64.exe",
         "install_flags": ["InstallAllUsers=1", "DefaultAllUsersTargetDir=C:\\Python310", "PrependPath=1", "Include_test=0"],
         "quiteinstall_flags": ["/quiet", "InstallAllUsers=1", "DefaultAllUsersTargetDir=C:\\Python310", "PrependPath=1", "SimpleInstall=1", "Include_test=0"],
-        "download_url": "https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe",
-        "checksum": "d8dede5005564b408ba50317108b765ed9c3c510342a598f9fd42681cbe0648b"
+        "download_url": "https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe"
       },
       "uninstallation": {
         "registry": {
@@ -95,14 +104,13 @@
     },
     {
       "name": "Visual Studio Code",
-      "target_version": "1.91.0",
+      "target_version": "1.98.2",
       "installation": {
         "installer_path": "VSCode",
-        "installer_exe": "VSCodeSetup-x64-1.91.0.exe",
+        "installer_exe": "VSCodeSetup-x64-1.98.2.exe",
         "install_flags": ["/norestart", "/mergetasks=!runcode", "/dir=C:\\Program Files\\Microsoft VS Code"],
         "quiteinstall_flags": ["/norestart", "/mergetasks=!runcode", "/dir=C:\\Program Files\\Microsoft VS Code", "/SP-", "/verysilent"],
-        "download_url": "https://update.code.visualstudio.com/1.91.0/win32-x64/stable",
-        "checksum": "fa3ea61ca7fbff9b40731a90975c3d48a648a1ef7bbcb747e7227a7552dc8d91"
+        "download_url": "https://update.code.visualstudio.com/1.98.2/win32-x64/stable"
       },
       "uninstallation": {
         "registry": {
@@ -161,15 +169,14 @@
     },
     {
       "name": "Cmake",
-      "target_version": "3.30.2",
+      "target_version": "4.0.0",
       "installation": {
         "installer_path": "Cmake",
-        "installer_exe": "cmake-3.30.2-windows-x86_64.msi",
+        "installer_exe": "cmake-4.0.0-windows-x86_64.msi",
         "install_flags": ["/norestart", "ALLUSERS=1", "ADD_CMAKE_TO_PATH=System"],
         "install_command": ["msiexec", "/i"],
         "quiteinstall_flags": ["/quiet", "/norestart", "ALLUSERS=1", "ADD_CMAKE_TO_PATH=System"],
-        "checksum": "31f799a9e7756305f74cd821970a793e599ead230925392886f45aed897a3c0e",
-        "download_url": "https://github.com/Kitware/CMake/releases/download/v3.30.2/cmake-3.30.2-windows-x86_64.msi"
+        "download_url": "https://github.com/Kitware/CMake/releases/download/v4.0.0/cmake-4.0.0-windows-x86_64.msi"
       },
       "uninstallation": {
         "registry": {
@@ -190,14 +197,13 @@
     },
     {
       "name": "Git",
-      "target_version": "2.46.0",
+      "target_version": "2.49.0",
       "installation": {
         "installer_path": "Git",
-        "installer_exe": "Git-2.46.0-64-bit.exe",
+        "installer_exe": "Git-2.49.0-64-bit.exe",
         "install_flags": ["/norestart"],
         "quiteinstall_flags": ["/SP-", "/verysilent", "/norestart"],
-        "checksum": "e6337d172590cea1f673acfeef218733e9352adeb863a3a9e8fa20ee0719a40f",
-        "download_url": "https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.1/Git-2.46.0-64-bit.exe"
+        "download_url": "https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe"
       },
       "uninstallation": {
         "registry": {
@@ -218,14 +224,13 @@
     },
     {
       "name": "OpenCV",
-      "target_version": "4.10.0",
+      "target_version": "4.11.0",
       "installation": {
         "installer_path": "opencv",
-        "installer_exe": "opencv-4.10.0-windows.exe",
+        "installer_exe": "opencv-4.11.0-windows.exe",
         "install_flags": ["-y", "-oC:\\Intel"],
         "quiteinstall_flags": ["-y", "-oC:\\Intel"],
-        "checksum": "bff38466091c313dac21a0b73eea8278316a89c1d434c6f0b10697e087670168",
-        "download_url": "https://github.com/opencv/opencv/releases/download/4.10.0/opencv-4.10.0-windows.exe"
+        "download_url": "https://github.com/opencv/opencv/releases/download/4.11.0/opencv-4.11.0-windows.exe"
       },
       "prechecks": {
         "command_check": {

@@ -50,18 +50,6 @@
       }
     },
     {
-      "name": "WebNN Workshop",
-      "target_version": "2025.0",
-      "installation": {
-        "source_path": "webnn_workshop",
-        "source_file": "webnn_workshop.zip",
-        "destination_dir": "webnn_workshop",
-        "download_url": "https://github.com/IntelSoftware/webnn_workshop/archive/refs/heads/master.zip",
-        "skip_top_dir": true
-      }
-    },
-
-    {
       "name": "Open Model Zoo",
       "target_version": "2024.3.0",
       "installation": {

@@ -18,29 +18,29 @@
   "archive_installations": [
     {
       "name": "OpenVino",
-      "target_version": "2025.0.0",
+      "target_version": "2025.2.0",
       "installation": {
         "source_path": "OpenVino",
         "source_file": "openvino.zip",
         "destination_dir": "C:\\program files (x86)\\intel\\openvino2025",
-        "download_url": "https://github.com/openvinotoolkit/openvino/archive/refs/tags/2025.0.0.zip",
+        "download_url": "https://github.com/openvinotoolkit/openvino/archive/refs/tags/2025.2.0.zip",
         "skip_top_dir": true
       }
     },
     {
       "name": "OpenVino Notebooks",
-      "target_version": "2025.0",
+      "target_version": "2025.2",
       "installation": {
         "source_path": "openvino_notebooks",
         "source_file": "openvino_notebooks.zip",
         "destination_dir": "openvino_notebooks",
-        "download_url": "https://github.com/openvinotoolkit/openvino_notebooks/archive/refs/heads/2025.0.zip",
+        "download_url": "https://github.com/openvinotoolkit/openvino_notebooks/archive/refs/heads/2025.2.zip",
         "skip_top_dir": true
       }
     },
     {
       "name": "OpenVino Demo Notebooks",
-      "target_version": "2025.0",
+      "target_version": "2025.2",
       "installation": {
         "source_path": "openvino_demo",
         "source_file": "openvino_demo.zip",

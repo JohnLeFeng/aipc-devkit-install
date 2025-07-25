@@ -1,7 +1,7 @@
 {
   "default_paths": {
     "openvino_source_dir": "Prerequisites\\OpenVino",
-    "samples_dir": "AIDevKit",
+    "samples_dir": "",
     "openvino_dest_dir": "C:\\program files (x86)\\intel\\openvino2025",
     "python_requirements_file": "Prerequisites\\PythonModules\\requirements.txt",
     "local_python_wheel_dir": "Prerequisites\\PythonModules\\modules",

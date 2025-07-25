@@ -624,13 +624,15 @@ opencv-python==4.11.0.86
     #   ultralytics
 opencv-python-headless==4.11.0.86
     # via neural-compressor
-openvino==2025.0.0
+openvino==2025.2.0
     # via -r requirementsbase.in
-openvino-telemetry==2025.1.0
+openvino-telemetry==2025.2.0
     # via
     #   -r requirementsbase.in
     #   nncf
     #   openvino
+openvino-genai==2025.2.0
+openvino-tokenizers==2025.2.0
 opt-einsum==3.4.0
     # via
     #   -r requirementsbase.in

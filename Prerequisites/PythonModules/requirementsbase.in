@@ -136,6 +136,8 @@ opencv-python
 openvino
 ## openvino-dev
 openvino-telemetry
+openvino-genai
+openvino-tokenizers
 opt-einsum
 optimum
 optimum_intel

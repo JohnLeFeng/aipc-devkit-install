@@ -1613,27 +1613,27 @@ def main(args=None, ui_log_handler: logging.Handler = None):
         file_name="aipcdevkit.bat",
         call_scripts=[openvino_setup_script, venv_python],
     )
-    if not bat_file_obj:
-        sw_error_code = 1
-    jupyter_bat_obj = create_batch_file(
-        workspace=pargs.workspace,
-        file_path=installation_dir,
-        file_name="start_lab.cmd",
-        call_scripts=[bat_file_obj.file_name],
-        append_lines=[
-            f'start /D "{installation_dir}\\openvino_notebooks" jupyter lab',
-            "start https://microsoft.github.io/webnn-developer-preview",
-            "start https://github.com/webmachinelearning/awesome-webnn",
-            f'cmd /K cd "{installation_dir}"',
-        ],
-    )
-    if not jupyter_bat_obj:
-        sw_error_code = 1
+    # if not bat_file_obj:
+    #     sw_error_code = 1
+    # jupyter_bat_obj = create_batch_file(
+    #     workspace=pargs.workspace,
+    #     file_path=installation_dir,
+    #     file_name="start_lab.cmd",
+    #     call_scripts=[bat_file_obj.file_name],
+    #     append_lines=[
+    #         f'start /D "{installation_dir}\\openvino_notebooks" jupyter lab',
+    #         "start https://microsoft.github.io/webnn-developer-preview",
+    #         "start https://github.com/webmachinelearning/awesome-webnn",
+    #         f'cmd /K cd "{installation_dir}"',
+    #     ],
+    # )
+    # if not jupyter_bat_obj:
+    #     sw_error_code = 1
 
     logger.info("\n\n".join(setup_message))
-    jupyter_bat_obj.run_file()
+    # jupyter_bat_obj.run_file()
 
-    return sw_error_code
+    # return sw_error_code
 
 
 if __name__ == "__main__":

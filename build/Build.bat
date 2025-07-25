@@ -14,7 +14,7 @@ SetLocal EnableExtensions DisableDelayedExpansion
 
 For %%A In (Cmd Reg)Do Set "%%A=%SystemRoot%\System32\%%A.exe"
 
-set "PYTHON_REG_KEY=HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\3.10\InstallPath"
+set "PYTHON_REG_KEY=HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\3.9\InstallPath"
 Set "Dir="
 For /F "Tokens=2*" %%A In ('
     ""%Cmd%" /D /C ""%Reg%" Query "%PYTHON_REG_KEY%" /V "" 2^>Nul""')Do Set "Dir=%%~B"

@@ -11,4 +11,4 @@
 ## other than those that are expressly stated in the License.
 
 # version.py
-VERSION = "2025.07.25"
+VERSION = "2025.07.30"

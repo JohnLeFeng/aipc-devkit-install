@@ -231,35 +231,6 @@
       }
     },
     {
-      "name": "VIM",
-      "target_version": "9.1.0",
-      "installation": {
-        "installer_path": "vim",
-        "installer_exe": "gvim_9.1.0_x64_signed.exe",
-        "install_flags": ["/package"],
-        "quiteinstall_flags": ["/S", "/package"],
-        "checksum": "daf645c53a3a4e62743093c674d7530e3a741e8a758a63f63e88c00d6b467719",
-        "download_url": "https://github.com/vim/vim-win32-installer/releases/download/v9.1.0/gvim_9.1.0_x64_signed.exe"
-      },
-      "uninstallation": {
-        "registry": {
-          "check_name_in_installed_softwares": [{"name": "Vim 9.1 (x64)"}],
-          "uninstall_flags": ["/S"],
-          "quiteuninstall_flags": ["/S"]
-        }
-      },
-      "prechecks": {
-        "registry": {
-          "check_name_in_installed_softwares": "Vim 9.1 (x64)",
-          "registry_value": "DisplayVersion"
-        }
-      },
-      "logs": {
-        "file_name": "Vim_Install.log",
-        "option": "/log="
-      }
-    },
-    {
       "name": "Intel Driver & Support Assistant",
       "target_version": "24.4.32.8",
       "installation": {
